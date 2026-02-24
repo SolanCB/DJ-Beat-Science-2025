@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap%22" rel="stylesheet">
+</head>
+
+<div id="navigation">
+    <nav id="navbar">
+  
+      <div class="nav-left">
+        <a href="#Home"><img src="./img/BSM-logo.png" alt=""></a>
+      </div>
+  
+      <ul class="nav-center">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About Me">About Me</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Testimonials">Testimonials</a></li>
+        <li><a href="#Book Now">Book Now</a></li>
+      </ul>
+  
+      <div class="nav-right">
+        <a class="social-icons" href="https://www.facebook.com/BeatScienceMusic" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+  
+        <a class="social-icons" href="https://www.instagram.com/djbeatscience/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+  
+        <a class="social-icons" href="https://soundcloud.com/djbeatscience" target="_blank">
+          <ion-icon name="logo-soundcloud"></ion-icon>
+        </a>
+      </div>
+  
+    </nav>
+  </div>
+  
+
+<body>
+<div class="container">
+<header id="Home" class="header">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="./img/header.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h1 class="heading-primary">DJ Beat Science</h1>
+
+        <h2 class="heading-primary--sub">Playing all the music you love,</h2>
+        <h2 class="heading-primary--sub">but didn't know you wanted to hear!</h2>
+        <a href="#popup" class="btn">Book Now</a>
+</header>
+
+<section id="About Me" class="section-2">
+    <div class="section-2__row">
+        <div class="section-2__column-1">
+        <h2 class="sub-heading"> About Me</h2>     
+        <p class="heading-p"><strong>DJ</strong> BeatScience is a <strong>Wakefield-based</strong> DJ with over 20 years experience, known for blending all genres of <strong>dance music</strong> with everything from <strong>70s funk</strong> and <strong>jazz</strong> to <strong>hip hop</strong> and beyond.</p> 
+            
+            
+            <ul class="about-me-bullets">
+                <li>Provided support for LCD Soundsystem, Pitbull and the Smile at Ottawa Bluesfest</li>
+                <li>Known for reading the crowd & technical mixing style</li>
+                <li>Available for DJ lessons</li>
+            </ul>    
+
+        </div>
+        
+        <div class="section-2__column-2">
+            <img src="./img/trev.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="Services" class="services-section">
+  <h2 class="sub-heading">Services</h2>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" onclick="prevSlide()">
+        <svg viewBox="0 0 24 24">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+
+    <div class="carousel-viewport">
+        <div class="carousel-container" id="carousel">
+            <!-- Slides are in JavaScript -->
+        </div>
+    </div>
+
+    <button class="carousel-btn next" onclick="nextSlide()">
+        <svg viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+</div>
+
+<div class="dots-container" id="dots">
+    <!-- Dots are in JavaScript -->
+</div>
+
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+<span class="close">✕</span>
+
+<div class="lightbox-content" onclick="event.stopPropagation()">
+    <img id="lightbox-img" alt="Lightbox image">
+    <div class="lightbox-right">
+        <div class="lightbox-text-content">
+            <div class="lightbox-caption"></div>
+            <div class="lightbox-description"></div>
+        </div>
+    </div>
+
+    <span class="lightbox-prev" onclick="lightboxPrev()">❮</span>
+    <span class="lightbox-next" onclick="lightboxNext()">❯</span>
+</div>
+</div>
+
+
+<!-- He has an Events Section, but he keeps it hidden(hence the large spacing on his website) -->
+
+
+<section id="Testimonials" class="section-4">
+    <h1 class="sub-heading">Testimonials</h1>  
+
+    <div class="Testimonial">
+        <input type="radio" name="Testimonial" title="slide1" class="Testimonial__nav"/>
+        <input type="radio" name="Testimonial" title="slide2" class="Testimonial__nav"/>
+        <input type="radio" name="Testimonial" title="slide3" class="Testimonial__nav"/>
+        <div class="Testimonial__inner">
+            <div class="Testimonial__contents">
+                <p class="Testimonial__txt">"BeatScience played all the music we love and took us through the eras, bringing us back to the 80s, 90s and 2000s jams from our youth. His setlist was catered to every one of our guests, with everyone from teens to seniors getting down on the dance floor."</p>
+                <h2 class="Testimonial__caption"><strong>Matt & Mylene</strong></h2>
+            </div>
+            <div class="Testimonial__contents">
+                <p class="Testimonial__txt">"I booked BeatScience for my 50th birthday and I'm still sore from dancing all night. The one comment I kept getting from party guests was how great the music was. BeatScience kept the party going all night and played songs I didn't even know I wanted to hear."</p>
+                <h2 class="Testimonial__caption"><strong>Natasha Stobert</strong></h2>
+            </div>
+            <div class="Testimonial__contents">
+                <p class="Testimonial__txt">"I have booked BeatScience multiple times for house parties and he's a major hit every time. From 90s hip hop to modern dance music, you can't stand still when BeatScience is on the turntables."</p>
+                <h2 class="Testimonial__caption"><strong>Nikki Mantell</strong></h2>
+            </div>
+        </div>
+    </div>
+        
+</section>
+
+
+    <footer id="Book Now" class="footer">
+  
+      <div class="footer-container">
+        <h1 class="sub-heading">Book Now</h1>
+        <p class="contact-me-p">Contact me with any questions or to book</p>
+    
+        <div class="form-box">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First name <span class="required">*</span></label>
+              <input type="text" placeholder="Enter your first name">
+            </div>
+    
+            <div class="form-group">
+              <label>Last name <span class="required">*</span></label>
+              <input type="text" placeholder="Enter your last name">
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email <span class="required">*</span></label>
+              <input type="email" placeholder="Enter your email">
+            </div>
+    
+            <div class="form-group">
+              <label>Phone</label>
+              <div class="phone-wrapper">
+                <div class="country-select">
+                  <span>🇨🇦</span>
+                  <span class="arrow">▼</span>
+                </div>
+                <input type="tel">
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label>Services</label>
+              <select>
+                <option value="">Select a service</option>
+                <option value="Weddings">Weddings</option>
+                <option value="Special Events">Special Events</option>
+                <option value="Corporate Events">Corporate Events</option>
+                <option value="Private Celebrations">Private Celebrations</option>
+                <option value="Dance Parties">Dance Parties</option>
+                <option value="Dj School">Dj School</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- This is what he had before(he now has a text field Message) -->
+    
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label>Book a meeting <span class="required">*</span></label>
+              <div class="meeting-notice">
+                Currently, there's no available time slots to schedule. Contact us to complete your request.
+              </div>
+            </div>
+          </div>
+    
+          <div class="submit-wrapper">
+            <button class="submit-btn">Submit</button>
+          </div>
+        </div>
+    
+        <div class="contact">
+          <div class="footer-left">
+            <p>© Trevor Greenway</p>
+            <p>All Rights Reserved 2025</p>
+          </div>
+
+          <!-- He had his contact here, but he removed it(I'm keeping it) -->
+
+          <div class="footer-right">
+            <p>Contact Me</p>
+            <a href="mailto:beatscience@hotmail.com">beatscience@hotmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+<!-- nav -->
+
+
+<script>
+  let lastScroll = 0;
+  const navbar = document.getElementById('navbar');
+  const scrollThreshold = 50;
+
+  window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > scrollThreshold) {
+          navbar.classList.add('scrolled');
+      } else {
+          navbar.classList.remove('scrolled');
+      }
+
+      if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+          navbar.classList.remove('show');
+          navbar.classList.add('hide');
+      } else {
+          navbar.classList.remove('hide');
+          navbar.classList.add('show');
+      }
+
+      lastScroll = currentScroll;
+  });
+</script>
+
+
+<!-- SERVICES -->
+
+
+<script>
+  const slidesData = [
+      {
+          image: "./img/corporate events.jpg",
+          label: "Corporate Events",
+          description: "Office functions, holiday parties, awards galas, etc."
+      },
+      {
+          image: "./img/weddings.jpg",
+          label: "Weddings",
+          description: "Over 20 years of wedding experience, playing all genres of music – from ceremony and cocktail hour to raging dance party. Customizable setlists, theme options and music from all eras. "
+      },
+      {
+          image: "./img/private celebrations.jpg",
+          label: "Private Celebrations",
+          description: "Have a special anniversary or birthday? Surprise your special someone with an impromptu dance party!!"
+      },
+      {
+          image: "./img/special events.jpg",
+          label: "Special Events",
+          description: "Music festivals, charity events and fundraisers for local causes."
+      },
+      {
+          image: "./img/dj lessons.jpg",
+          label: "Dj School",
+          description: "Want to learn the craft of DJing? Lessons available for all levels – kids and adults"
+      },
+      {
+          image: "./img/backyard bbqs.jpg",
+          label: "Backyard Barbecues",
+          description: "Turn your afternoon grill fest into a lively backyard party with beats that will keep your guests bouncing"
+      }
+  ];
+
+  let currentIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const dotsContainer = document.getElementById('dots');
+
+  const lb = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lightbox-img");
+  const lbCap = document.querySelector(".lightbox-caption");
+  const lbDesc = document.querySelector(".lightbox-description");
+  let lightboxIndex = 0;
+
+  function initCarousel() {
+      // Create dots
+      slidesData.forEach((_, index) => {
+          const dot = document.createElement('button');
+          dot.className = 'dot';
+          if (index === 0) dot.classList.add('active');
+          dot.onclick = () => goToSlide(index);
+          dotsContainer.appendChild(dot);
+      });
+
+      renderCarousel();
+  }
+
+  function renderCarousel() {
+      carousel.innerHTML = '';
+      
+      const prevIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
+      const nextIndex = (currentIndex + 1) % slidesData.length;
+      
+      const prevSlide = createSlide(slidesData[prevIndex], prevIndex, 'side');
+      carousel.appendChild(prevSlide);
+      
+      const currentSlide = createSlide(slidesData[currentIndex], currentIndex, 'center');
+      carousel.appendChild(currentSlide);
+      
+      const nextSlideEl = createSlide(slidesData[nextIndex], nextIndex, 'side');
+      carousel.appendChild(nextSlideEl);
+      
+      const allDots = document.querySelectorAll('.dot');
+      allDots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+      });
+  }
+
+  function createSlide(slide, index, position) {
+      const slideDiv = document.createElement('div');
+      slideDiv.className = `carousel-slide ${position}`;
+      slideDiv.dataset.index = index;
+      slideDiv.innerHTML = `
+          <div class="slide-image">
+              <img src="${slide.image}" alt="${slide.label}">
+          </div>
+          <p class="slide-label">${slide.label}</p>
+      `;
+      
+      slideDiv.addEventListener('click', () => {
+          lightboxIndex = index;
+          openLightbox();
+      });
+      
+      return slideDiv;
+  }
+
+  function nextSlide() {
+      currentIndex = (currentIndex + 1) % slidesData.length;
+      renderCarousel();
+  }
+
+  function prevSlide() {
+      currentIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
+      renderCarousel();
+  }
+
+  function goToSlide(index) {
+      currentIndex = index;
+      renderCarousel();
+  }
+
+  // Lightbox functions
+  function openLightbox() {
+      lb.style.display = "block";
+      const slide = slidesData[lightboxIndex];
+      lbImg.src = slide.image;
+      lbCap.textContent = slide.label;
+      lbDesc.textContent = slide.description;
+      document.body.style.overflow = 'hidden';
+  }
+  
+  function closeLightbox() {
+      lb.style.display = "none";
+      document.body.style.overflow = 'auto';
+  }
+  
+  function lightboxNext() {
+      lightboxIndex = (lightboxIndex + 1) % slidesData.length;
+      openLightbox();
+  }
+  
+  function lightboxPrev() {
+      lightboxIndex = (lightboxIndex - 1 + slidesData.length) % slidesData.length;
+      openLightbox();
+  }
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+      if (lb.style.display === 'block') {
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') lightboxNext();
+          if (e.key === 'ArrowLeft') lightboxPrev();
+      }
+  });
+
+  initCarousel();
+</script>
+
+
+
+
+<!-- Testimonials -->
+
+
+
+
+<script>
+  let current = 0;
+  const radios = document.querySelectorAll('.Testimonial__nav');
+  const total = radios.length;
+  
+  function TestimonialnextSlide() {
+      current = (current + 1) % total;
+      radios[current].checked = true;
+  }
+  
+  let autoplay = setInterval(TestimonialnextSlide, 5000); // changes slide every 5 sec
+  
+  radios.forEach((radio, index) => {
+      radio.addEventListener('click', () => {
+          current = index;      
+          clearInterval(autoplay);
+          autoplay = setInterval(TestimonialnextSlide, 5000); 
+      });
+  });
+</script>
+    
+<script src="https://kit.fontawesome.com/2b8d9de9a2.js" crossorigin="anonymous"></script>
+</body>
+</html>
